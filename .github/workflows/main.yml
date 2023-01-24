@@ -1,0 +1,37 @@
+name: Deploy to Deta
+on: push
+
+env:
+  DETA_MICRO_NAME: ms-test
+  DETA_PROJECT_NAME: default
+  DETA_ACCESS_TOKEN: ${{ secrets.DETA_ACCESS_TOKEN }}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        
+      - name: Flatten our files into src
+        run: |
+          cp requirements.txt ./src
+    
+      - name: Install deta
+        run: |
+          curl -fsSL https://get.deta.dev/cli.sh | sh
+          echo "/home/runner/.deta/bin" >> $GITHUB_PATH
+          
+      - name: Fetch metadata
+        run: |
+          cd /tmp
+          deta clone --name $DETA_MICRO_NAME --project $DETA_PROJECT_NAME deta_clone
+          cp -r /tmp/deta_clone/.deta $GITHUB_WORKSPACE/src/.deta
+          
+      - name: Deploy to deta
+        run: |
+          cd src
+          deta deploy
+          echo -n "Changes are accessible at: "
+          deta details | jq -r ".endpoint"
