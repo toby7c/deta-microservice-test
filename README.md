@@ -11,7 +11,7 @@ this is good to ensure local resources/environment variables don't accidentally 
 - [Visual Studio Code](https://code.visualstudio.com/download)
 
 ### Action
-1. Open up a terminal in the root directory and run `docker-compose up -d`
+1. Open up a terminal in the root directory and run `docker-compose up -d --build`
 2. Install the following VSCode extensions:
     - `ms-vscode-remote.remote-containers`
     - `ms-azuretools.vscode-docker`
@@ -25,7 +25,7 @@ this is good to ensure local resources/environment variables don't accidentally 
 9. Get to coding! Changes will be reflected in the host system and on the api accessible at http://localhost:8080
 
 ### Notes
-- When adding new libraries to requirements.txt you'll have to run `docker-compose down` and `docker-compose up` in the root directory again.
+- When adding new libraries to requirements.txt you'll have to run `docker-compose down` and `docker-compose up -d --build` in the root directory again.
 
 ## How to deploy to [Deta](https://deta.sh/)
 - To add
