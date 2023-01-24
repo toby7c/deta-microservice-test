@@ -1,5 +1,8 @@
 name: Deploy to Deta
-on: push
+on:
+  push:
+    branches:
+    - main
 
 env:
   DETA_MICRO_NAME: ms-test
