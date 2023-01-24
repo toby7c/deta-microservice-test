@@ -22,6 +22,8 @@ this is good to ensure local resources/environment variables don't accidentally 
 8. In the bottom right of VSCode, make sure our Python environment is selected
 9. Get to coding! Changes will be reflected in the host system and on the api accessible at http://localhost:8080
 
+### Notes
+- When adding new libraries to requirements.txt you'll have to run `docker-compose down` and `docker-compose up` in the root directory again.
 
 ## How to deploy to [Deta](https://deta.sh/)
 
