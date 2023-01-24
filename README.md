@@ -26,4 +26,4 @@ this is good to ensure local resources/environment variables don't accidentally 
 - When adding new libraries to requirements.txt you'll have to run `docker-compose down` and `docker-compose up` in the root directory again.
 
 ## How to deploy to [Deta](https://deta.sh/)
-
+- To add
