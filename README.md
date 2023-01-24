@@ -1,4 +1,6 @@
 # deta-microservice-test
+[![Deploy to Deta](https://github.com/yb0t/deta-microservice-test/actions/workflows/deploy_deta.yml/badge.svg?branch=main)](https://github.com/yb0t/deta-microservice-test/actions/workflows/deploy_deta.yml) [![CodeQL](https://github.com/yb0t/deta-microservice-test/actions/workflows/github-code-scanning/codeql/badge.svg?branch=main)](https://github.com/yb0t/deta-microservice-test/actions/workflows/github-code-scanning/codeql)
+
 
 ## How to run locally
 Here we will use Docker and Visual Studio Code's remote feature to develop inside of a seperate environment, 
