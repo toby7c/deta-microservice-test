@@ -1,5 +1,4 @@
-# deta-ms-test
-
+# deta-microservice-test
 
 ## How to run locally
 Here we will use Docker and Visual Studio Code's remote feature to develop inside of a seperate environment, 
