@@ -1,6 +1,9 @@
 # deta-microservice-test
 [![Deploy to Deta](https://github.com/yb0t/deta-microservice-test/actions/workflows/deploy_deta.yml/badge.svg?branch=main)](https://github.com/yb0t/deta-microservice-test/actions/workflows/deploy_deta.yml) [![CodeQL](https://github.com/yb0t/deta-microservice-test/actions/workflows/github-code-scanning/codeql/badge.svg?branch=main)](https://github.com/yb0t/deta-microservice-test/actions/workflows/github-code-scanning/codeql)
 
+# Deprecated: [Deta Cloud have since migrated to Deta Space](https://deta.space/from-cloud)  
+To do:
+- Deta space sample app.  
 
 ## How to run locally
 Here we will use Docker and Visual Studio Code's remote feature to develop inside of a seperate environment, 
